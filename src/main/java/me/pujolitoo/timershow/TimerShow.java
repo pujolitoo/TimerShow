@@ -1,6 +1,7 @@
 package me.pujolitoo.timershow;
 
 import me.pujolitoo.timershow.command.TlmCommand;
+import me.pujolitoo.timershow.util.Logger;
 import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -15,7 +16,7 @@ public final class TimerShow extends JavaPlugin{
     public void onEnable() {
         // Plugin startup logic
         setupCommands();
-        System.out.println("PLUGIN STARTED!!!a");
+        System.out.println(Logger.SUCCESS + "TimerShow has started correctly!");
     }
 
     @Override
