@@ -1,0 +1,11 @@
+name: TimerShow
+version: '${version}'
+main: me.pujolitoo.timershow.TimerShow
+api-version: 1.15
+authors: [ a ]
+description: a
+website: a
+commands:
+  tlm:
+    description: SENDS TITLE
+    usage: /<command>
