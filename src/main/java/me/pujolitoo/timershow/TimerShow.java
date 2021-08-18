@@ -10,6 +10,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.logging.Level;
+
 public final class TimerShow extends JavaPlugin{
     private void setupCommands(){
         getCommand("tlm").setExecutor(new TlmCommand(this));
