@@ -4,6 +4,7 @@ import me.pujolitoo.timershow.TimerShow;
 import me.pujolitoo.timershow.enums.TitleShowPlayers;
 import me.pujolitoo.timershow.enums.TitleShowType;
 import me.pujolitoo.timershow.event.CounterEvents;
+import me.pujolitoo.timershow.util.Logger;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Sound;
@@ -233,7 +234,7 @@ public class Counter implements CounterEvents{
             }.runTaskTimer(this.plugin, 0, 20);
             return true;
         }else{
-            sender.sendMessage(ChatColor.RED +"Error: Another counter is executing.");
+            sender.sendMessage(Logger.ERROR + "Another counter is executing.");
             return false;
         }
     }
@@ -245,7 +246,7 @@ public class Counter implements CounterEvents{
             this.task = null;
             this.current = 0;
         }else{
-            sender.sendMessage("No countdown is being executed.");
+            sender.sendMessage(Logger.ERROR + "No countdown is being executed.");
         }
 
     }
